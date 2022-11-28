@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+
+    <script src="./varjs.js"></script>
+</head>
+
+<body>
+    <p class="para" id="pid"></p>
+
+
+
+
+    <!-- Events are rocking the floors :) -->
+
+
+    <!-- date us used to get the current date -->
+    <button onclick="document.getElementById('pid').innerHTML = Date()">Click me</button>
+
+    <!-- changing the cuurent content -->
+
+    <button onclick="this.innerHTML=Date()">The time ?</button>
+
+    <!-- using function -->
+    <button onclick="displayDate()">The date ?</button>
+
+
+
+
+    <p class="mouseover" onmouseover="mouseOver()">Please hover over me...</p>
+
+    <p class="mouseout" onmouseout="mouseOut()">Please out from me...</p>
+
+    <p class="onkeydown" onkeydown="keyDown()">Please press key ...</p>
+
+
+    <!-- onmouseout="this.style.backgroundColor='white'" -->
+
+
+    <!-- onmouseover="this.style.backgroundColor='red'"
+    onmouseout="this.style.backgroundColor='white'" -->
+    <div id="change" onmouseover="change">
+        Hover over me to change background
+    </div>
+
+</body>
+
+</html>
