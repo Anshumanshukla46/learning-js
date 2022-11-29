@@ -1,25 +1,25 @@
-// // set
-// var s = new Set([1, 2, 3, 4, 5]);
-// text = "";
-// s.forEach(display);
-// function display(value) {
-//     text += value + " ";
-// }
+// set
+var s = new Set([1, 2, 3, 4, 5]);
+text = "";
+s.forEach(display);
+function display(value) {
+    text += value + " ";
+}
 
-// document.write(text);
+document.write(text);
 
-// s.add(12);
-// s.forEach(display);
+s.add(12);
+s.forEach(display);
 
 
-// // document.write("<br>" + text);
-
-// // .values() returns an iterator
-// text = "";
-// for (let x of s.values()) {
-//     text += x + " ";
-// }
 // document.write("<br>" + text);
+
+// .values() returns an iterator
+text = "";
+for (let x of s.values()) {
+    text += x + " ";
+}
+document.write("<br>" + text);
 
 
 
@@ -33,20 +33,20 @@ const fruits = new Map(
     ]
 );
 
-// document.write("<br>" + fruits);
+document.write("<br>" + fruits);
 
-// overwrite
-// fruits.set("apple", 90);
+overwrite
+fruits.set("apple", 90);
 
-// fruits.set("oranges", 231);
+fruits.set("oranges", 231);
 
-// document.write("<br>" + fruits.get('apple'));
+document.write("<br>" + fruits.get('apple'));
 
-// document.write("<br>" + fruits.size);
+document.write("<br>" + fruits.size);
 
-// document.write("<br>" + fruits.delete('apple'));
+document.write("<br>" + fruits.delete('apple'));
 
-// document.write("<br>" + fruits.has("kiwi"));;
+document.write("<br>" + fruits.has("kiwi"));;
 
 fruits.forEach(dis);
 
