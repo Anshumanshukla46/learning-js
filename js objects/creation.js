@@ -135,6 +135,7 @@ document.write("<br>" + "After conversion to string".toUpperCase() + (JSON.strin
 
 
 
+
 // getter and setter
 
 const guy = {
@@ -156,6 +157,8 @@ guy.name = "this is setter function";
 document.write("<br>" + guy.name);
 
 
+
+
 // constructor
 function Guy(first, last, age, nation) {
     this.fname = first,
@@ -171,7 +174,8 @@ const g = new Guy("firstName", "lastName", 2198, "India");
 document.write("<br>" + g.name());
 
 
-// We also learned that you can not add a new property to an existing object constructor:
+// We also learned that you can not add a new property to an existing object constructor but later can do using prototype:
+
 
 
 // PROTOTYPES
