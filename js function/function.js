@@ -133,3 +133,21 @@ function count() {
 // document.write(add());
 // document.write(add());
 
+// like as if any function is defined then it does have the scope outer to it.
+
+// like as we are accessing any global variable with in the function that is "closure";
+
+
+function outer(outvar) {
+    const x = "accessing outer variable even without calling it as i am CLOSURE";
+    return function inner(inner) {
+        document.write("<br>" + outvar);
+        document.write("<br>" + inner);
+        document.write("<br>" + x);
+
+    }
+}
+
+
+const fun2 = outer("i am outer");
+fun2();
