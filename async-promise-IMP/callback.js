@@ -24,11 +24,11 @@ setTimeout(() => {
 // like as while using setInterval you can specify the duration after which it is should show the result again
 
 
-setInterval(showDate, 3000) // now the function will be called after each 3sec
+// setInterval(showDate, 3000) // now the function will be called after each 3sec
 
 function showDate() {
     let d = new Date();
-    document.write("<br>" + d.getSeconds());
+    document.write("<br>" + d);
 }
 
 

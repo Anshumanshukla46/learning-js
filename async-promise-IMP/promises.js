@@ -21,10 +21,10 @@ p.then((message) => {
     // if success -> resolve -> this statment
 }).catch((message) => {
     console.log("I am in 'then' " + message);
-    // if success -> reject -> this statment
+    // if error -> reject -> this statment
 })
 
-// useful when the we want to do sometask after wards like as downloading image from server and then showing and if failed then try to show error message
+// useful when we want to do sometask after wards like as downloading image from server and then showing and if failed then try to show error message
 
 
 // this is the replacement of callback

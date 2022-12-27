@@ -1,4 +1,4 @@
-// async is important when we are having one promise in one another - as in that case their will be somehow hell number of then that will make the code hell clumsy
+// async is important when we are having one promise in one another - as in that case their will be somehow hell number of ".then" that will make the code hell clumsy
 
 function makeRequest(location) {
     return new Promise((resolve, reject) => {
@@ -20,7 +20,7 @@ function processRequest(response) {
     })
 }
 
-
+// below then can be hell if we have more 
 
 // makeRequest('Google', message => { // for makeRequest
 //     console.log('Response Received');
@@ -37,12 +37,14 @@ function processRequest(response) {
 
 
 // this can be easily handled by async
-// async is function which is eventually which will have all then statments
+// async is function which eventually will have all then statments
 
 
-// function using promise should be async and calling teh promise should be await
+// function which are using promise should be 'async' and 
+// those which are calling the promise should be 'await'
+
 async function doWork() {
-    try {// resolve
+    try {   // resolve
 
         const res = await makeRequest('Google'); // calling promise but used "await" for it
 
